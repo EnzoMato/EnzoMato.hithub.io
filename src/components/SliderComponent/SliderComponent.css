@@ -1,0 +1,19 @@
+/* Estilo para el carrusel */
+.slick-slider {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Ocupa toda la pantalla */
+    /*height: calc(100vh - 80px);*/ /* Toma toda la altura menos la del menú principal */
+    overflow: hidden; /* Oculta parte de la imagen que esté fuera del contenedor */
+    transform: translateZ(0);
+}
+
+/* Estilo para las imágenes en el carrusel */
+.slick-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Escala la imagen para que cubra todo el contenedor */
+    object-position: center; /* Centra la imagen horizontalmente */
+    transform: translateZ(0);
+}
+

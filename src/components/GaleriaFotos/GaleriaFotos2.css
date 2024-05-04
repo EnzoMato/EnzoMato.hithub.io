@@ -1,0 +1,111 @@
+.titulo2-h2{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #edd043;
+}
+
+.section2 {
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card2{
+  position: relative; /* Establece la posición relativa para poder usar z-index */
+  background-color: #edd043;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  padding-bottom: 30px;
+}
+
+.card-img2 {
+  padding-top: 20px;
+  width: 250px;
+  position: relative; /* Establece la posición relativa */
+  z-index: 1; /* Poner la imagen por encima del contenido del div */
+}
+
+p2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* CSS */
+
+.card-button2 {
+  padding-top: 10px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  align-items: center;
+  background-color: #fee6e3;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19); ;
+  color: #edd043;
+  cursor: pointer;
+  display: flex;
+  font-size: 15px;
+  height: 35px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  z-index: 0;
+}
+
+/* .card-button:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 33px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.card-button:hover:after {
+  transform: translate(0, 0);
+} */
+
+.card-button2:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.card-button2:hover {
+  outline: 0;
+  background-color: #edd043;
+  border: 2px solid #fee6e3;
+  color: #fee6e3;
+}
+
+@media (min-width: 768px) {
+  .card-button2 {
+    padding: 0 40px;
+  }
+}

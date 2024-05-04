@@ -1,0 +1,111 @@
+body.menu-open {
+  overflow: hidden;
+}
+
+.header{
+  background-color: #f9f9f9;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+  line-height: 80px;
+}
+
+.nav-link {
+  color: #847784;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 15px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content; /* Permite que lostitulos que estan en dos palabras no hagan salto de linea */
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  color: #FF4134;
+  cursor: pointer;
+}
+
+.nav-toggle {
+  color: #FF4134;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+
+/* Version Movil */
+
+@media (max-width: 768px) {
+ 
+  .header{
+    height: 60px;
+  }
+  
+  .nav {
+    line-height: 60px;
+  }
+  
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #e6e6e6;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    
+    left: 100%;
+    transition: left 0.3s;
+    z-index: 2;
+  }
+  
+  .nav-menu-item {
+    line-height: 60px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #FF4134;
+  }
+
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu-visible {
+    left: 0px;
+  }
+
+}
